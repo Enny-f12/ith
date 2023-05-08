@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 :root {
-  --green: #354a21;
+  --primary: #354a21;
   --white: #fff;
   --black: #000;
   --light-blue: #b2d3c2;
@@ -20,7 +20,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  padding-top: 90px;
 }
 
 ul,
@@ -32,8 +31,13 @@ li {
 .secondary-heading {
   font-size: 50px;
   text-align: center;
-  color: var(--green);
+  color: var(--primary);
   margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -47,21 +51,30 @@ li {
 .header {
   width: 100%;
   height: 90px;
-  background: var(--green);
+  /* background: rgba(255, 255, 255, 0.98); */
+  background: var(--white);
   position: fixed;
   top: 0;
   left: 0;
+  padding: 10px 50px;
+  z-index: 5;
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
-  z-index: 5;
 }
 
-.logo-container p {
+.logo-container a {
   font-size: 50px;
   font-weight: bold;
-  color: var(--light-blue);
+  color: var(--black);
+  text-decoration: none;
 }
 
 .nav-menu {
@@ -73,20 +86,66 @@ li {
 }
 
 .nav-link {
-  text-transform: uppercase;
-  color: var(--light-blue);
+  color: var(--black);
   text-decoration: none;
+  position: relative;
+}
+
+.nav-link.active {
+  color: var(--primary);
+}
+
+.nav-link.active::before {
+  color: var(--primary);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav-btn {
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
 }
 
 label.icon {
-  color: var(--light-blue);
+  color: var(--primary);
   font-size: 30px;
   cursor: pointer;
   display: none;
 }
 
 @media (max-width: 900px) {
-  .logo-container p {
+  .logo-container a {
     font-size: 30px;
   }
 
@@ -100,7 +159,8 @@ label.icon {
     height: calc(100vh - 90px);
     top: 90px;
     left: -100%;
-    background-color: #354a21;
+    /* background: rgba(255, 255, 255, 0.98); */
+    background: var(--white);
     flex-direction: column;
     z-index: 10;
   }
@@ -120,12 +180,14 @@ label.icon {
     url(../assets/images/j.jpg) no-repeat center center;
   background-size: cover;
   height: calc(100vh - 90px);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 50px;
   text-align: center;
   color: var(--white);
+  padding-top: 90px;
 }
 
 .primary-heading {
@@ -134,13 +196,13 @@ label.icon {
 
 @media (max-width: 1024px) {
   .primary-heading {
-    font-size: 40px;
+    font-size: 70px;
   }
 }
 
 @media (max-width: 768px) {
   .primary-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -169,7 +231,7 @@ label.icon {
   margin-top: 20px;
   cursor: pointer;
   border: 1px solid transparent;
-  background: var(--green);
+  background: var(--primary);
   color: var(--light-blue);
   font-size: 15px;
   padding: 10px 30px;
@@ -310,13 +372,13 @@ label.icon {
 }
 
 .program-cont.light {
-  border: 6px solid var(--green);
+  border: 6px solid var(--primary);
   background: transparent;
 }
 
 .program-cont.light h1,
 .program-cont.light h2 {
-  color: var(--green);
+  color: var(--primary);
 }
 
 .program-cont.light p {
@@ -371,17 +433,17 @@ label.icon {
   margin: 0 auto;
 }
 
-.container {
+.containers {
   margin-bottom: 30px;
 }
 
-.container > p,
-.container > h1 {
+.containers > p,
+.containers > h1 {
   margin: 1.5rem 0;
   text-align: center;
 }
 
-.container > h1 {
+.containers > h1 {
   letter-spacing: 3px;
   color: black;
   font-size: 30px;
@@ -389,7 +451,7 @@ label.icon {
 }
 
 .faq {
-  border: 1px solid var(--green);
+  border: 1px solid var(--primary);
   margin: 10px 0;
   padding: 0 2.5rem;
 }
@@ -426,7 +488,7 @@ label.icon {
     padding: 50px 20px;
   }
 
-  .container > h1 {
+  .containers > h1 {
     font-size: 24px;
     line-height: 1.2;
   }
@@ -439,7 +501,7 @@ label.icon {
 /* Footer */
 footer {
   position: relative;
-  background-color: var(--green);
+  background-color: var(--primary);
   padding: 20px 50px 40px;
   display: flex;
   place-content: center;
