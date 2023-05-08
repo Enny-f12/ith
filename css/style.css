@@ -55,6 +55,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 50px;
+  z-index: 5;
 }
 
 .logo-container p {
@@ -101,6 +102,7 @@ label.icon {
     left: -100%;
     background-color: #354a21;
     flex-direction: column;
+    z-index: 10;
   }
 
   .nav-menu.show {
