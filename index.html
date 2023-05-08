@@ -4,50 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".icon").click(function () {
-          $("ul").toggleClass("show");
-        });
-      });
-    </script>
-    <title>IBADAN TALENTS HOUSE</title>
+    <title>ITH</title>
   </head>
   <body>
-    <nav>
-      <label class="logo" for="">ITH</label>
-      <ul>
-        <li><a href="active">About Us</a></li>
-        <li><a href="">Get Involved</a></li>
-        <li><a href="">Our Programs</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
+    <!-- Navigation -->
+    <header class="header">
+      <div class="logo-container"><p>ITH</p></div>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Get Involved</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Our Programs</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
       <label class="icon">
         <i class="fa-solid fa-bars"></i>
       </label>
-    </nav>
-    <section class="home">
-      <div class="first">
-        <h1>
-          <b class="i">IBADAN</b> <br />
-          <b class="t">TALENT</b> <br />
-          <b class="h">HOUSE</b>
-        </h1>
-      </div>
-      <div class="pic">
-        <img src="j.jpg" alt="ibadan" />
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="primary-heading">
+        <span class="i">IBADAN</span> <br />
+        <span class="t">TALENT</span> <br />
+        <span class="h">HOUSE</span>
+      </h1>
     </section>
 
+    <!-- Scale Section -->
     <section class="sec1">
       <div class="scale">
         <h1>Scale your career</h1>
@@ -56,12 +54,14 @@
           because they don't have work experience and we have created projects
           and programs to help them grow and scale their careers
         </p>
+        <br />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos,
           vero molestias consectetur dolor labore cupiditate quaerat. Dolorum,
           error natus alias, vero sequi assumenda delectus possimus, consectetur
           voluptatum dicta iure.
         </p>
+        <br />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
           nobis veritatis mollitia officiis aspernatur dolores t emporibus
@@ -70,10 +70,12 @@
         </p>
         <button type="button">Get Involved</button>
       </div>
-      <div class="img">
-        <img src="./img/int2.jpg" alt="picture" />
+      <div class="img-cont">
+        <img src="./assets/images/int2.jpg" alt="picture" />
       </div>
     </section>
+
+    <!-- Mission Section -->
     <section class="sec2">
       <div class="mission">
         <h1>Our Mission</h1>
@@ -99,87 +101,95 @@
         </p>
         <button type="button">Donate</button>
       </div>
-      <div class="img1">
-        <img src="./img/int2.jpg" alt="picture" />
-      </div>
-    </section>
-    <div class="header">
-      <h1>OUR PROGRAMS</h1>
-    </div>
-    <section class="sec3">
-      <div class="fist">
-        <h1>ITH study groups</h1>
-        <h2>Build with people</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sed
-          saepe consectetur quibusdam nulla, libero illo accusamus, placeat
-          fugiat reprehenderit atque architecto magni veritatis ipsum, rerum
-          quod. Recusandae, alias. Iusto.
-        </p>
-        <h2>Connect with pairs</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
-          quia quod quidem sequi. Ex quisquam qui fuga sapiente facilis earum
-          quo animi veniam at magnam ipsa, maiores optio reiciendis consectetur?
-        </p>
-        <h2>Get more experience</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          cum repudiandae nesciunt illo error recusandae provident totam d
-          ignissimos similique eveniet quos consequatur nulla fuga beatae
-          deleniti commodi repellendus, pariatur iure.
-        </p>
-      </div>
-      <div class="second">
-        <h1>ITH Mentorship</h1>
-        <h2>Build project</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea
-          dolorem, iste illo a, doloribus iure laborum eius omnis nesciunt id
-          beatae illum dignissimos maxime sit cumque odio odit. Dignissimos.
-        </p>
-        <h2>Get work experience</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia
-          ipsum eius quis ratione, quos blanditiis per ferendis suscipit libero
-          maiores autem cumque. Repellat accusamus aut eaque deleniti sint,
-          dolores dolore.
-        </p>
-        <h2>Be hirable</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          nulla accusamus debitis minima delectus. Illum corporis quis at error
-          deleniti minus consequuntur animi fugit. Dolores labore est non nulla
-          tempora.
-        </p>
-      </div>
-      <div class="third">
-        <h1>ITH Apprenticeship</h1>
-        <h2>Get trainings</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          consectetur? Perspiciatis ipsum animi distinctio error earum
-          doloribus, alias, atque placeat pariatur corrupti provident ad illum
-          molestias odit dolore unde sunt.
-        </p>
-        <h2>Build projects</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque
-          quasi quaerat quidem nam aut ipsam, esse minus sunt optio ipsa laborum
-          itaque vero id ea explicabo ex accusamus. Quidem?
-        </p>
-        <h2>Network</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-          mollitia, nulla quis exercitationem animi earum eum, voluptatum
-          repudiandae ipsam, a ccusantium nesciunt inventore pariatur!
-          Necessitatibus nesciunt, esse fugit adipisci repellendus accusantium!
-        </p>
+      <div class="img1-cont">
+        <img src="./assets/images/int2.jpg" alt="picture" />
       </div>
     </section>
 
+    <!-- Programs Section -->
+    <section class="sec3">
+      <h1 class="secondary-heading">OUR PROGRAMS</h1>
+
+      <div class="program-box">
+        <div class="program-cont">
+          <h1>ITH study groups</h1>
+          <h2>Build with people</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sed
+            saepe consectetur quibusdam nulla, libero illo accusamus, placeat
+            fugiat reprehenderit atque architecto magni veritatis ipsum, rerum
+            quod. Recusandae, alias. Iusto.
+          </p>
+          <h2>Connect with pairs</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus quia quod quidem sequi. Ex quisquam qui fuga sapiente
+            facilis earum quo animi veniam at magnam ipsa, maiores optio
+            reiciendis consectetur?
+          </p>
+          <h2>Get more experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            cum repudiandae nesciunt illo error recusandae provident totam d
+            ignissimos similique eveniet quos consequatur nulla fuga beatae
+            deleniti commodi repellendus, pariatur iure.
+          </p>
+        </div>
+
+        <div class="program-cont light">
+          <h1>ITH Mentorship</h1>
+          <h2>Build project</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea
+            dolorem, iste illo a, doloribus iure laborum eius omnis nesciunt id
+            beatae illum dignissimos maxime sit cumque odio odit. Dignissimos.
+          </p>
+          <h2>Get work experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            officia ipsum eius quis ratione, quos blanditiis per ferendis
+            suscipit libero maiores autem cumque. Repellat accusamus aut eaque
+            deleniti sint, dolores dolore.
+          </p>
+          <h2>Be hirable</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            nulla accusamus debitis minima delectus. Illum corporis quis at
+            error deleniti minus consequuntur animi fugit. Dolores labore est
+            non nulla tempora.
+          </p>
+        </div>
+
+        <div class="program-cont">
+          <h1>ITH Apprenticeship</h1>
+          <h2>Get trainings</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            consectetur? Perspiciatis ipsum animi distinctio error earum
+            doloribus, alias, atque placeat pariatur corrupti provident ad illum
+            molestias odit dolore unde sunt.
+          </p>
+          <h2>Build projects</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos cumque
+            quasi quaerat quidem nam aut ipsam, esse minus sunt optio ipsa
+            laborum itaque vero id ea explicabo ex accusamus. Quidem?
+          </p>
+          <h2>Network</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            mollitia, nulla quis exercitationem animi earum eum, voluptatum
+            repudiandae ipsam, a ccusantium nesciunt inventore pariatur!
+            Necessitatibus nesciunt, esse fugit adipisci repellendus
+            accusantium!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
     <section class="sec4">
-      <h1>OUR SPONSORS</h1>
+      <h1 class="secondary-heading">OUR SPONSORS</h1>
       <div class="one">
         <div class="spon1">
           <p>
@@ -207,19 +217,20 @@
       </div>
     </section>
 
+    <!-- FAQS Section -->
     <section class="sec5">
-      <h1 class="fact">FAQS ON IBADAN TALENT HOUSE</h1>
+      <h1 class="secondary-heading">FAQS ON IBADAN TALENT HOUSE</h1>
       <div class="container">
         <h1>Most Frequently Asked Questions</h1>
-        <p class="o">
+        <p>
           Here are the most frequently asked questions you may check before
           getting started
         </p>
         <div class="faq">
-          <button class="accordion">
+          <div class="accordion">
             What is Ibadan Talent House?
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
           <div class="panel">
             <p>
               A Community driven non profit given to the purpose of training the
@@ -235,10 +246,10 @@
         </div>
 
         <div class="faq">
-          <button class="accordion">
+          <div class="accordion">
             Our Missions and Goals?
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
           <div class="panel">
             <p>
               Our main mission is to improve the talent pipeline. We will
@@ -250,31 +261,30 @@
         </div>
 
         <div class="faq">
-          <button class="accordion">
+          <div class="accordion">
             Why Ibadan?
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
           <div class="panel">
             <p>
-              According to the UN-Habitat in 2022,
-              <a href=""
-                >Ibadan is currently the second fastest growing city in Africa </a
-              >. And we hope to scale up the talent pipeline and also
-              effectively accelerate this process. We believe we can give more
-              definition to the growth of this pacesetter city. As much as the
-              current governmentis building great projects around of the city.
-              We also want to add our quota of development to this ongoing
-              building by improving the talent pipeline. And also Ibadan has the
-              potential to facilitate this great project.
+              According to the UN-Habitat in 2022, Ibadan is currently the
+              second fastest growing city in Africa . And we hope to scale up
+              the talent pipeline and also effectively accelerate this process.
+              We believe we can give more definition to the growth of this
+              pacesetter city. As much as the current governmentis building
+              great projects around of the city. We also want to add our quota
+              of development to this ongoing building by improving the talent
+              pipeline. And also Ibadan has the potential to facilitate this
+              great project.
             </p>
           </div>
         </div>
 
         <div class="faq">
-          <button class="accordion">
+          <div class="accordion">
             Why Non-profit?
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
           <div class="panel">
             <p>
               We are really interested in the good of the future and we are
@@ -286,10 +296,10 @@
         </div>
 
         <div class="faq">
-          <button class="accordion">
+          <div class="accordion">
             What do we need to achieve this?
             <i class="fa-solid fa-chevron-down"></i>
-          </button>
+          </div>
           <div class="panel">
             <p>
               A space to train people <br />Laptops to help people who can't
@@ -301,6 +311,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <ul class="social-icon">
         <li>
@@ -324,33 +336,10 @@
         <li><a href="privacy-policy.html" class="d">Refund Policy</a></li>
       </ul>
 
-      <p>&copy; 2022 King Affiliate. All rights reserved.</p>
+      <p>&copy; 2023 ITH Project. All rights reserved.</p>
     </footer>
 
-    <script type="text/javascript">
-      function myFunction() {
-        var navbar = document.getElementById("nav");
-        navbar.classList.toggle("show");
-      }
-    </script>
-
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          this.parentElement.classList.toggle("active");
-
-          var panel = this.nextElementSibling;
-
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="./scripts/app.js" defer async></script>
   </body>
 </html>
