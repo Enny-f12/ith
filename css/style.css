@@ -84,6 +84,10 @@ label.icon {
 }
 
 @media (max-width: 900px) {
+  .logo-container p {
+    font-size: 30px;
+  }
+
   label.icon {
     display: block;
   }
