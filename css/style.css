@@ -451,6 +451,7 @@ footer .menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   margin: 10px 0;
   flex-wrap: wrap;
 }
