@@ -39,6 +39,7 @@ li {
 @media screen and (max-width: 768px) {
   .secondary-heading {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -125,19 +126,17 @@ label.icon {
   color: var(--white);
 }
 
-.primary-heading .i {
-  font-size: 120px;
-}
-
-.primary-heading .t {
+.primary-heading {
   font-size: 100px;
 }
 
-.primary-heading .h {
-  font-size: 80px;
+@media (max-width: 1024px) {
+  .primary-heading {
+    font-size: 40px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .primary-heading {
     font-size: 50px;
   }
@@ -162,12 +161,6 @@ label.icon {
   width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
-}
-
-.scale h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: var(--green);
 }
 
 .scale button {
@@ -265,6 +258,10 @@ label.icon {
 @media (max-width: 768px) {
   .sec2 {
     padding: 50px 20px;
+  }
+
+  .mission h1 {
+    font-size: 30px;
   }
 }
 
@@ -386,6 +383,7 @@ label.icon {
   letter-spacing: 3px;
   color: black;
   font-size: 30px;
+  margin-top: 0;
 }
 
 .faq {
@@ -401,24 +399,39 @@ label.icon {
   font-weight: 500;
   padding: 2rem 0;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+}
+
+.accordion.active {
+  font-weight: 600;
 }
 
 .accordion i {
   font-size: 1.4rem;
 }
 
-.active,
-.accordion:hover {
-  font-weight: 600;
-}
-
 .panel {
   padding: 0 1rem 2.5rem 1.5rem;
   display: none;
   transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .sec5 {
+    padding: 50px 20px;
+  }
+
+  .container > h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .faq {
+    padding: 0 1.5rem;
+  }
 }
 
 /* Footer */
