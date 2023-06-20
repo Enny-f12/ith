@@ -4,8 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - ITH</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../public/site.webmanifest" />
   </head>
   <body>
-    <h1>Contact</h1>
+    <!-- Navigation -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="./"><img src="../public/logo.png" alt="logo" /></a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../about/" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a href="#programs" class="nav-link">Our Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="../contact/" class="nav-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="../donate/" class="nav-btn">Donate</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img src="../assets/images/Rectangle 6407.png" alt="" />
+        </div>
+
+        <div class="form-container">
+          <div class="wrapper">
+            <h1>We’d love to hear from you</h1>
+            <div>
+              <form class="form" id="form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="first_name"
+                    placeholder="First Name"
+                    id="first_name"
+                    class="form-input"
+                  />
+                  <small class="text-danger">Error message</small>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="last_name"
+                    placeholder="Last Name"
+                    id="last_name"
+                    class="form-input"
+                  />
+                  <small class="text-danger">Error message</small>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email Address"
+                    id="email_address"
+                    class="form-input"
+                    autocomplete="email"
+                  />
+                  <small class="text-danger">Error message</small>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    name="phone_number"
+                    placeholder="Phone Number"
+                    id="tel"
+                    class="form-input"
+                    autocomplete="tel"
+                  />
+                  <small class="text-danger">Error message</small>
+                </div>
+
+                <div class="btn-submit">
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <ul class="social-icon">
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+
+      <ul class="menu">
+        <li><a href="./" class="d">Home</a></li>
+        <li><a href="./terms/" class="d">Terms</a></li>
+        <li><a href="./contact/" class="d">Contact Us</a></li>
+        <li><a href="./privacy-policy/" class="d">Refund Policy</a></li>
+      </ul>
+
+      <p>&copy; 2023 ITH Project. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../scripts/base.js" defer async></script>
+    <script src="../scripts/contact.js" defer async></script>
   </body>
 </html>
