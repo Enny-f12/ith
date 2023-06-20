@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 :root {
-  --primary: #354a21;
+  --primary: #59788e;
   --white: #fff;
   --black: #000;
   --light-blue: #b2d3c2;
@@ -30,6 +30,9 @@ body {
 ul,
 li {
   list-style: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -73,17 +76,17 @@ li {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
 .nav-link {
   color: var(--black);
-  text-decoration: none;
   position: relative;
 }
 
 .nav-link.active {
   color: var(--primary);
+  font-weight: bold;
 }
 
 .nav-link.active::before {
@@ -111,7 +114,6 @@ li {
 }
 
 .nav-btn {
-  text-decoration: none;
   border: 1px solid transparent;
   background: var(--primary);
   color: var(--white);
@@ -137,17 +139,13 @@ li {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: transform 0.15s ease;
-  transition: transform 0.15s ease;
-  background-color: #000;
+  -webkit-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  background-color: var(--primary);
   border-radius: 100px;
 }
 
 @media screen and (max-width: 900px) {
-  .logo-container a {
-    font-size: 30px;
-  }
-
   .hamburger {
     display: block;
   }
@@ -175,7 +173,7 @@ li {
     /* background: rgba(255, 255, 255, 0.98); */
     background: var(--white);
     flex-direction: column;
-    z-index: 10;
+    z-index: 100;
   }
 
   .nav-menu.show {
