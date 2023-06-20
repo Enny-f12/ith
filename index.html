@@ -8,39 +8,62 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>ITH</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/site.webmanifest" />
   </head>
   <body>
     <!-- Navigation -->
     <header class="header">
       <div class="header-container container">
         <div class="logo-container">
-          <a href="./">ITH</a>
+          <a href="./"><img src="./public/logo.png" alt="logo" /></a>
         </div>
 
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="./about/" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Get Involved</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Our Programs</a>
+              <a href="#programs" class="nav-link">Our Programs</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact Us</a>
+              <a href="./contact/" class="nav-link">Contact Us</a>
             </li>
             <li>
-              <a href="#" class="nav-btn">Donate</a>
+              <a href="./donate/" class="nav-btn">Donate</a>
             </li>
           </ul>
         </nav>
-        <label class="icon">
-          <i class="fa-solid fa-bars"></i>
-        </label>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </header>
 
@@ -50,6 +73,7 @@
         <span class="i">IBADAN</span> <br />
         <span class="t">TALENT</span> <br />
         <span class="h">HOUSE</span>
+        <!-- <img src="./logo.png" alt="" /> -->
       </h1>
     </section>
 
@@ -349,5 +373,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <script src="./scripts/app.js" defer async></script>
+    <script src="./scripts/base.js" defer async></script>
   </body>
 </html>

@@ -15,13 +15,13 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function myFunction() {
-  let navbar = document.getElementById("nav");
-  navbar.classList.toggle("show");
-}
+// function myFunction() {
+//   let navbar = document.getElementById("nav");
+//   navbar.classList.toggle("show");
+// }
 
-$(document).ready(function () {
-  $(".icon").click(function () {
-    $("ul").toggleClass("show");
-  });
-});
+// $(document).ready(function () {
+//   $(".icon").click(function () {
+//     $("ul").toggleClass("show");
+//   });
+// });
