@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
   --primary: #354a21;
@@ -11,95 +11,94 @@
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    }
-
-.image{
-  width: 100%;
-  height: 20%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
-h1{
+.image {
+  width: 100%;
+  /* height: 20%; */
+}
+
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about{
-   align-items:center;
-   justify-content: center;
-   width:88%;
-   margin: auto;
+.about {
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+  margin: auto;
   margin-bottom: 30px;
-       }
+}
 
-.about p{
-   letter-spacing: 1.5;
-   line-height: 1.5;
-     }
+.about p {
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
 
- .new{
+.new {
   display: flex;
   gap: 5%;
   width: 90%;
   margin: auto;
- }
- .mission{
+}
+.mission {
   margin-top: 0;
- }
- .mission p{
+}
+.mission p {
   letter-spacing: 1;
   font-size: 16px;
   margin-top: 20px;
- }
- .image-one{
+}
+.image-one {
   width: 50%;
   height: 400px;
   object-fit: cover;
- }
- @media (max-width:800px){
-  .new{
+}
+@media (max-width: 800px) {
+  .new {
     flex-wrap: wrap;
     padding: 4%;
     justify-content: center;
   }
- }
-.mission h2{
-  margin-top:15px;
+}
+.mission h2 {
+  margin-top: 15px;
 }
 
- .new-w{
+.new-w {
   display: flex;
   width: 90%;
   margin-top: 30px;
   gap: 5%;
   margin: auto;
- }
- h2{
+}
+h2 {
   display: flex;
   justify-content: center;
   font-size: 30px;
   font-weight: 700;
   padding: 0% 3% 0% 0%;
- }
- .vision{
+}
+.vision {
   margin-top: 15px;
- }
-.vision p{
+}
+.vision p {
   line-height: 1.5;
   font-size: 16px;
   margin-top: 20px;
-
 }
-@media(max-width:800px){
-  .new-w{
+@media (max-width: 800px) {
+  .new-w {
     flex-wrap: wrap-reverse;
   }
-  .image-one{
+  .image-one {
     width: 100%;
   }
-  .vision{
+  .vision {
     margin-top: 10px;
   }
 }
